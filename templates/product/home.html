@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홈페이지</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* 추가된 스타일 */
+        body, h1, p {
+            font-size: 1.2rem; /* 텍스트 크기 조정 */
+        }
+        .btn {
+            padding: 10px 20px; /* 버튼 크기 조정 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">쇼핑몰 홈페이지</h1>
+        <p class="lead">환영합니다! 여기는 쇼핑몰의 홈페이지입니다.</p>
+        <a href="{{ url_for('product.products') }}" class="btn btn-primary btn-lg">제품 보기</a> <!-- 버튼 크기 조정 -->
+    </div>
+</body>
+</html>
